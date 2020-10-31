@@ -17,3 +17,11 @@ sites/*/files-private
 sites/all/README.txt
 sites/all/modules/README.txt
 sites/all/themes/README.txt
+.htaccess
+.ht.router.php
+.gitattributes
+.eslintrc.json
+.eslintignore
+.editorconfig
+.csslintrc
+
