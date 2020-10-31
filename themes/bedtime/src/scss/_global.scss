@@ -139,4 +139,15 @@ To make the image a circle.
 .Footer {
     background-color: #e96a49;
     padding: 10px;
+    padding-bottom: 30px;
+}
+
+.Copyright {
+    text-align: center;
+
+    p {
+        display: inline-block;
+        margin: auto;
+        transform: rotate(-3deg);
+    }
 }
