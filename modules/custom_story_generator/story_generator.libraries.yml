@@ -1,0 +1,8 @@
+story_generator:
+  version: 1.0
+  css:
+    theme:
+      assets/story_generator_theme.css: {}
+      '//fonts.googleapis.com/css?family=Indie+Flower&display=swap': { type: external, minified: true }
+  js:
+    assets/story_generator.js: {}

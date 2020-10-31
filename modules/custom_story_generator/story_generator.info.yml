@@ -1,0 +1,4 @@
+name: Story Generator
+description: A module that creates a bedtime story by randomly choosing elements from a dataset.
+type: module
+core: 8.x
