@@ -1,0 +1,22 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.Banner {
+  height: 600px;
+  background-image: url("../img/home_background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+}
+
+.Banner h1 {
+  font-size: xx-large;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.Main-Content {
+  padding: 0px;
+}
+
+/*# sourceMappingURL=home.css.map */

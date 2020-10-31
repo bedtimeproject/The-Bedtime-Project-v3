@@ -1,0 +1,7 @@
+<?php
+
+function bedtime_preprocess_page(&$variables) {
+  if ($variables['is_front'] == TRUE) {
+      $variables['#attached']['library'][] = 'bedtime/home';
+  }
+}
