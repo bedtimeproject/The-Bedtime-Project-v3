@@ -1,0 +1,7 @@
+blackjack:
+  version: 1.0
+  css:
+    theme:
+      assets/blackjack.css: {}
+  js:
+    assets/blackjack.js: {}

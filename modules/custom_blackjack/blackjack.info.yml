@@ -1,0 +1,4 @@
+name: Blackjack
+description: A module containing a functional game of JavaScript
+type: module
+core: 8.x
