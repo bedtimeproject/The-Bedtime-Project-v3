@@ -1,0 +1,76 @@
+.Play-View {
+  display: flex;
+  justify-content: space-evenly;
+  .views-row {
+      margin-bottom: 25px;
+      a {
+          background-color: #fff1c5;
+          font-size: 20px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 75px;
+          width: 175px;
+          font-size: 1.6rem;
+          color: black;
+          cursor: pointer;
+          
+          
+          transform: translate3d(-15px, -15px, 0);
+          transition-property: box-shadow, transform;
+          transition-duration: 0.3s;
+          color: #d20404;
+          border: 3px solid #d20404;
+          
+          box-shadow: 15px 15px 5px 0px black;
+      
+          &:active{
+          transform: translate3d(-5px, -5px, 0);
+          box-shadow: 5px 5px 0px 0px black;
+          }     
+      }
+  }
+}
+
+.Limerick-View {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .views-row {
+    margin-bottom: 25px;
+    a {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75px;
+      width: 500px;
+      font-size: 1.6rem;
+      color: white ;
+      cursor: pointer;
+
+      border-radius: 40px;
+      font-weight: bold;
+      transition-property: box-shadow, background-color, transform;
+      transition-duration: 0.5s;
+      background-color: #1a647d;
+      box-shadow: none;
+
+      &:hover{
+        color: black;
+        background-color: #3fc6f4;
+        box-shadow: 0px 0px 7px 7px #1a647d;
+      }
+
+      &:active{
+        background-color: #1a647d;
+        transform: scale(0.9);
+        box-shadow: 0px 0px 30px 30px cyan;
+      }
+
+     
+    }
+  }
+}
