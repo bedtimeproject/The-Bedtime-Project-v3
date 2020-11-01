@@ -1,0 +1,8 @@
+lights_out:
+  version: 1.0
+  css:
+    theme:
+      "//fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap": { type: external }
+      assets/lightsout.css: {}
+  js:
+    assets/lightsout.js: {}

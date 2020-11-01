@@ -1,0 +1,8 @@
+blue_sky:
+  version: 1.0
+  css:
+    theme:
+      "//fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap": { type: external }
+      assets/scroll.css: {}
+  js:
+    assets/scrollAnimation.js: {}

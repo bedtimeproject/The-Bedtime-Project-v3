@@ -1,0 +1,4 @@
+name: Lights Out
+description: A module containing a simple JavaScript Game of Lights Out
+type: module
+core: 8.x
