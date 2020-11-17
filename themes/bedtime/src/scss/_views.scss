@@ -1,7 +1,9 @@
 .Play-View {
   margin-top: 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 100%;
   .views-row {
       margin-bottom: 25px;
       a {
@@ -39,6 +41,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 100%;
   .views-row {
     margin-bottom: 25px;
     a {
@@ -47,7 +50,9 @@
       justify-content: center;
       align-items: center;
       height: 75px;
-      width: 500px;
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
       font-size: 1.6rem;
       color: white ;
       cursor: pointer;
@@ -56,22 +61,35 @@
       font-weight: bold;
       transition-property: box-shadow, background-color, transform;
       transition-duration: 0.5s;
-      background-color: #1a647d;
+      background-color: #7E98F9;
       box-shadow: none;
 
       &:hover{
-        color: black;
-        background-color: #3fc6f4;
-        box-shadow: 0px 0px 7px 7px #1a647d;
+        background-color: darken($color:  #7E98F9, $amount: 20%);
+        box-shadow: 0px 0px 7px 7px  #7E98F9;
       }
 
       &:active{
-        background-color: #1a647d;
+        background-color: darken($color:  #7E98F9, $amount: 50%);
         transform: scale(0.9);
-        box-shadow: 0px 0px 30px 30px cyan;
+        box-shadow: 0px 0px 30px 30px darken($color:  #7E98F9, $amount: 20%);
+      }
+    }
+    
+  }
+  .views-row:nth-child(even) {
+    a {
+      background-color: #DC768B;
+      &:hover{
+        background-color:darken($color: #DC768B, $amount: 20%);
+        box-shadow: 0px 0px 7px 7px #DC768B;
       }
 
-     
+      &:active{
+        background-color: darken($color: #DC768B, $amount: 50%);
+        transform: scale(0.9);
+        box-shadow: 0px 0px 30px 30px darken($color: #DC768B, $amount: 20%);
+      }
     }
   }
 }
