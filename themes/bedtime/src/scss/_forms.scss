@@ -1,0 +1,43 @@
+#contact-message-feedback-form {
+  background-color: #DC768B;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-required {
+    &::after {
+      color: red;
+      content: " *";
+    }
+  }
+
+  label {
+    display: block;
+    font-style: italic;
+    &.option {
+      display: inline;
+    }
+  }
+
+  .form-item {
+    margin: 5px;
+    padding: 10px 25px;
+    background-color: #7E98F9;
+    border-radius: 12px;
+  }
+
+  .form-text, .form-textarea {
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  .form-submit {
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+  }
+}

@@ -580,4 +580,41 @@ Footer
   box-shadow: 0px 0px 30px 30px #bc304d;
 }
 
+#contact-message-feedback-form {
+  background-color: #DC768B;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-message-feedback-form .form-required::after {
+  color: red;
+  content: " *";
+}
+#contact-message-feedback-form label {
+  display: block;
+  font-style: italic;
+}
+#contact-message-feedback-form label.option {
+  display: inline;
+}
+#contact-message-feedback-form .form-item {
+  margin: 5px;
+  padding: 10px 25px;
+  background-color: #7E98F9;
+  border-radius: 12px;
+}
+#contact-message-feedback-form .form-text, #contact-message-feedback-form .form-textarea {
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 10px;
+  width: 100%;
+}
+#contact-message-feedback-form .form-submit {
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
 /*# sourceMappingURL=globalTheme.css.map */
