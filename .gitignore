@@ -1,5 +1,6 @@
+.DS_Store
 sites/default/settings.php
-sites/The-Bedtime-Project.dd/
+sites/The-Bedtime-Project.dd
 
 sites/sites.php
 cache/
@@ -24,4 +25,12 @@ sites/all/themes/README.txt
 .eslintignore
 .editorconfig
 .csslintrc
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
 
