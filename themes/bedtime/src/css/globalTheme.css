@@ -351,7 +351,6 @@ h1 {
   transition-duration: 0.5s;
   margin-bottom: 10px;
 }
-
 h1:hover {
   color: #3d3968;
   font-size: 1.01 em;
@@ -381,15 +380,25 @@ Header and Nav
   clear: both;
   content: "";
 }
-
-#block-bedtime-main-menu ul {
-  list-style: none;
+@media screen and (max-width: 800px) {
+  .Header-Container {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 }
 
+@media screen and (max-width: 800px) {
+  #block-bedtime-main-menu {
+    margin: auto;
+  }
+}
+#block-bedtime-main-menu ul {
+  list-style: none;
+  padding-left: 0px;
+}
 #block-bedtime-main-menu ul li {
   float: left;
 }
-
 #block-bedtime-main-menu ul li a {
   transition-duration: 0.4s;
   padding: 10px;
@@ -399,10 +408,52 @@ Header and Nav
   text-decoration: none;
   color: #3d3968;
 }
-
 #block-bedtime-main-menu ul li a:hover {
   background-color: #938ec1;
   color: black;
+}
+
+.Branding-Container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .Branding-Container {
+    flex-direction: column;
+  }
+}
+
+/*
+To make the image a circle. 
+*/
+.Image-Cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+@media screen and (max-width: 800px) {
+  .Image-Cropper {
+    margin: 0px;
+  }
+}
+
+.Site-Logo {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.Site-Name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 0 8px 10px 8px;
+}
+.Site-Name a {
+  text-decoration: none;
 }
 
 /*
@@ -425,7 +476,8 @@ button {
   -moz-appearance: none;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   background: #efced8;
 }
 
@@ -436,39 +488,6 @@ button:focus {
 
 button:active {
   transform: scale(0.99);
-}
-
-/*
-To make the image a circle. 
-*/
-.Image-Cropper {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 20px;
-  border: solid black 1px;
-  display: inline-block;
-}
-
-.Site-Logo {
-  display: inline;
-  margin: 0 auto;
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-}
-
-.Site-Name {
-  display: inline-block;
-  position: absolute;
-  top: 30px;
-  left: 60px;
-  font-weight: bold;
-  font-size: xx-large;
-  background-color: rgba(200, 200, 200, 0.6);
-  padding: 8px;
 }
 
 /*

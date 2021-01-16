@@ -1,69 +1,116 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 h1 {
-    text-align: center;
-    margin: 0;
-    transition-duration: 0.5s;
-    margin-bottom: 10px;
-}
-h1:hover {
+  text-align: center;
+  margin: 0;
+  transition-duration: 0.5s;
+  margin-bottom: 10px;
+  &:hover {
     color: #3d3968;
     font-size: 1.01 em;
     -webkit-transform: rotateZ(1deg);
     -ms-transform: rotateZ(1deg);
     transform: rotateZ(1deg);
+  }
 }
 
 h2 {
-    padding-top: 5px;
-    margin: 0;
+  padding-top: 5px;
+  margin: 0;
 }
-
 
 /*
 Header and Nav
 */
 .Header {
-    padding: 10px;
-    background-color: #ebe0de;
+  padding: 10px;
+  background-color: #ebe0de;
 }
 
 .Header-Container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
 
-    clear: both;
-    content: "";
+  clear: both;
+  content: "";
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 }
 
-#block-bedtime-main-menu ul {
+#block-bedtime-main-menu {
+  @media screen and (max-width: 800px) {
+    margin: auto;
+  }
+  & ul {
     list-style: none;
+    padding-left: 0px;
+    & li {
+      float: left;
+      & a {
+        transition-duration: 0.4s;
+        padding: 10px;
+        border: solid #938ec1 1px;
+        margin: 4px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #3d3968;
+        &:hover {
+          background-color: #938ec1;
+          color: black;
+        }
+      }
+    }
+  }
 }
 
-#block-bedtime-main-menu ul li {
-    float: left;
+.Branding-Container {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
-#block-bedtime-main-menu ul li a {
-    transition-duration: 0.4s;
-    padding: 10px;
-    border: solid #938ec1 1px;
-    margin: 4px;
-    border-radius: 4px;
+/*
+To make the image a circle. 
+*/
+.Image-Cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  @media screen and (max-width: 800px) {
+    margin: 0px;
+  }
+}
+.Site-Logo {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.Site-Name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 0 8px 10px 8px;
+  a {
     text-decoration: none;
-    color: #3d3968;
-}
-#block-bedtime-main-menu ul li a:hover {
-    background-color: #938ec1;
-    color: black;
+  }
 }
 
 /*
@@ -71,64 +118,31 @@ Button Styles
 */
 
 button {
-    display: inline-block;
-    border: none;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    background: #f3ebe8;
-    color: #000;
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #f3ebe8;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-button:hover, button:focus {
-    background: #efced8;    
+button:hover,
+button:focus {
+  background: #efced8;
 }
 button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 button:active {
-    transform: scale(0.99);
-}
-
-
-
-/*
-To make the image a circle. 
-*/
-.Image-Cropper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 20px;
-    border: solid black 1px;
-    display: inline-block;
-}
-.Site-Logo {
-  display: inline;
-  margin: 0 auto;
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-}
-
-.Site-Name {
-    display: inline-block;
-    position: absolute;
-    top: 30px;
-    left: 60px;
-    font-weight: bold;
-    font-size: xx-large;
-    background-color: rgba(200, 200, 200, .6);
-    padding: 8px;
+  transform: scale(0.99);
 }
 
 /*
@@ -136,7 +150,7 @@ Body
 */
 
 .Main-Content {
-    padding: 60px;
+  padding: 60px;
 }
 
 /*
@@ -144,17 +158,17 @@ Footer
 */
 
 .Footer {
-    background-color: #e96a49;
-    padding: 10px;
-    padding-bottom: 30px;
+  background-color: #e96a49;
+  padding: 10px;
+  padding-bottom: 30px;
 }
 
 .Copyright {
-    text-align: center;
+  text-align: center;
 
-    p {
-        display: inline-block;
-        margin: auto;
-        transform: rotate(-3deg);
-    }
+  p {
+    display: inline-block;
+    margin: auto;
+    transform: rotate(-3deg);
+  }
 }

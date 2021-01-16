@@ -1,6 +1,6 @@
 name: Bedtime
 type: theme
-description: 'A Theme for Daniel Stigmons Bedtime Project.'
+description: "A Theme for Daniel Stigmons Bedtime Project."
 core: 8.x
 base theme: null
 libraries:
@@ -8,6 +8,6 @@ libraries:
 
 # Region metadata.
 regions:
-  header: 'Header'
-  content: 'Content'
-  footer: 'Footer'
+  header: "Header"
+  content: "Content"
+  footer: "Footer"
