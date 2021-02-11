@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_page_attachments_alter().
+ * @todo https://drupalize.me/tutorial/connect-react-drupal-theme-or-module?p=3253
+ */
+function react_example_theme_page_attachments_alter(array &$attachments) {
+  // Use the dev library if we're developing locally.
+  if (in_array('story_animated/react_app', $attachments['#attached']['library']) && file_exists(__DIR__ . '/assets/dist_dev')) {
+    $index = array_search('story_animated/react_app', $attachments['#attached']['library']);
+    $attachments['#attached']['library'][$index] = 'story_animated/react_app_dev';
+  }
+}
