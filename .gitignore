@@ -36,3 +36,4 @@ sites/*/files
 sites/*/private
 
 modules/story_animated/assets/node_modules/
+modules/story_animated/assets/dist_dev/

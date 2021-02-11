@@ -1,5 +1,9 @@
-story_animated:
-  version: 1.0
-  css:
-    theme:
+react_app:
+  version: 1.0.0
   js:
+    assets/dist/main.min.js: { minified: true }
+
+react_app_dev:
+  version: 1.0.0
+  js:
+    assets/dist_dev/main.min.js: { minified: true }
