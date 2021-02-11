@@ -34,3 +34,5 @@ sites/*/services*.yml
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+modules/story_animated/assets/node_modules/
